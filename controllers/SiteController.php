@@ -20,9 +20,14 @@ class SiteController extends Controller
                 'except' =>['login','signup'],
                 'rules' => [
                     [
-                        'actions' => ['login','signup'],
+                        'actions' => ['login'],
                         'allow' => true,
                         'roles' => ['?'],
+                    ],
+                    [
+                        'allow' => true,
+                        'actions' => ['logout'],
+                        'roles' => ['@'],
                     ],
                 ],
             ],
@@ -75,7 +80,6 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
         return $this->goHome();
     }
 
