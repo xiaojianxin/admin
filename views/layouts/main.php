@@ -49,10 +49,20 @@ AppAsset::register($this);
         ?>
 
         <div class="container">
-            <?= Breadcrumbs::widget([
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
-            <?= $content ?>
+            <div class="row">
+                <div class="col-xs-3">
+                    <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                        <li class="active"><a href="#section-1">素材管理</a></li>
+                        <li><a href="#section-2">第二部分</a></li>
+                        <li><a href="#section-3">第三部分</a></li>
+                        <li><a href="#section-4">第四部分</a></li>
+                        <li><a href="#section-5">第五部分</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-9">
+                    <?= $content ?>
+                </div>
+            </div>
         </div>
     </div>
 
