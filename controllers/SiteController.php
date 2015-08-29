@@ -14,14 +14,20 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
+
            'access' => [
                 'class' => AccessControl::className(),
                 'except' =>['login','signup'],
                 'rules' => [
                     [
-                        'actions' => ['login','signup'],
+                        'actions' => ['login'],
                         'allow' => true,
                         'roles' => ['?'],
+                    ],
+                    [
+                        'allow' => true,
+                        'actions' => [ 'index','logout'],
+                        'roles' => ['@'],
                     ],
                 ],
             ],
@@ -54,14 +60,16 @@ class SiteController extends Controller
 
     public function actionLogin()
     {
-        $this->layout = false;
+
+        $this->layout = "login.php";
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+             $this->layout = "main.php";
+             return $this->render('index');
         } else {
             return $this->render('login', [
                 'model' => $model,
@@ -72,7 +80,6 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
         return $this->goHome();
     }
 

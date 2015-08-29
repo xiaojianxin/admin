@@ -1,5 +1,5 @@
-Yii 2 Basic Application Template
-================================
+
+
 
 Yii 2 Basic Application Template is a skeleton Yii 2 application best for
 rapidly creating small projects.
@@ -7,7 +7,6 @@ rapidly creating small projects.
 The template contains the basic features including user login/logout and a contact page.
 It includes all commonly used configurations that would allow you to focus on adding new
 features to your application.
-
 
 DIRECTORY STRUCTURE
 -------------------
@@ -29,7 +28,9 @@ DIRECTORY STRUCTURE
 REQUIREMENTS
 ------------
 
+
 The minimum requirement by this application template that your Web server supports PHP 5.4.0.
+
 
 
 INSTALLATION
@@ -56,6 +57,7 @@ You can then install this application template using the following command:
 
 ~~~
 php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
+
 php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
 ~~~
 
