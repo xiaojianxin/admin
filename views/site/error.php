@@ -1,11 +1,12 @@
 <?php
 
+use yii\helpers\Html;
+
+>>>>>>> 4ecde28da0c372f9a63f3b5a3352058d74aba760
 /* @var $this yii\web\View */
 /* @var $name string */
 /* @var $message string */
 /* @var $exception Exception */
-
-use yii\helpers\Html;
 
 $this->title = $name;
 ?>

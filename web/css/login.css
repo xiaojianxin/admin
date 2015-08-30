@@ -1,0 +1,13 @@
+.login{
+	position: absolute;
+	width: 35%;
+	left: 50%;
+	top:25%;
+	margin-left: -280px;
+	text-align: center;
+	border: 1px solid #dddddd;
+	padding-bottom: 50px;
+}
+.login .row{
+	margin-top: 20px;
+}

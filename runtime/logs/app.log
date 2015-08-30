@@ -1,0 +1,108 @@
+2015-08-30 10:55:38 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\web\Request.php:1219
+Stack trace:
+#0 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\web\Request.php(1201): yii\web\Request->loadCookies()
+#1 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\web\Request.php(1287): yii\web\Request->getCookies()
+#2 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\web\Request.php(1266): yii\web\Request->loadCsrfToken()
+#3 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\helpers\BaseHtml.php(286): yii\web\Request->getCsrfToken()
+#4 G:\chang\Code\wamp\www\basic\views\layouts\main.php(20): yii\helpers\BaseHtml::csrfMetaTags()
+#5 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\base\View.php(325): require('G:\\chang\\Code\\w...')
+#6 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('G:\\chang\\Code\\w...', Array)
+#7 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('G:\\chang\\Code\\w...', Array, Object(app\controllers\SiteController))
+#8 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#9 G:\chang\Code\wamp\www\basic\controllers\SiteController.php(52): yii\base\Controller->render('index')
+#10 [internal function]: app\controllers\SiteController->actionIndex()
+#11 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#14 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#15 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 G:\chang\Code\wamp\www\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2015-08-30 10:55:37 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_RA_VER' => '3.0.7'
+    'HTTP_RA_SID' => '72FF2803-20141221-053854-66849c-c41283'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Go\\bin;E:\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/chang/Code/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/chang/Code/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/chang/Code/wamp/www/basic/web/index.php'
+    'REMOTE_PORT' => '54892'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440924937.692
+    'REQUEST_TIME' => 1440924937
+]
+2015-08-30 10:55:38 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 G:\chang\Code\wamp\www\basic\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#6 {main}
+2015-08-30 10:55:37 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_RA_VER' => '3.0.7'
+    'HTTP_RA_SID' => '72FF2803-20141221-053854-66849c-c41283'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Go\\bin;E:\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/chang/Code/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/chang/Code/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/chang/Code/wamp/www/basic/web/index.php'
+    'REMOTE_PORT' => '54892'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440924937.692
+    'REQUEST_TIME' => 1440924937
+]

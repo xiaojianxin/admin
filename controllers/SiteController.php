@@ -14,13 +14,18 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
+           'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout'],
+                'except' =>['login','signup'],
                 'rules' => [
                     [
-                        'actions' => ['logout'],
+                        'actions' => ['login'],
                         'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'allow' => true,
+                        'actions' => [ 'index','logout'],
                         'roles' => ['@'],
                     ],
                 ],
@@ -54,23 +59,25 @@ class SiteController extends Controller
 
     public function actionLogin()
     {
+        $this->layout = "login.php";
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+             $this->layout = "main.php";
+             return $this->render('index');
+        } else {
+            return $this->render('login', [
+                'model' => $model,
+            ]);
         }
-        return $this->render('login', [
-            'model' => $model,
-        ]);
     }
 
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
         return $this->goHome();
     }
 
@@ -81,10 +88,11 @@ class SiteController extends Controller
             Yii::$app->session->setFlash('contactFormSubmitted');
 
             return $this->refresh();
+        } else {
+            return $this->render('contact', [
+                'model' => $model,
+            ]);
         }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
     }
 
     public function actionAbout()
