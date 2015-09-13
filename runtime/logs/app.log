@@ -1,0 +1,2299 @@
+2015-09-08 16:28:12 [127.0.0.1][1][qes76h350lgs4g9cg5r8tat8f0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Url' not found' in F:\wamp\wamp\www\admin\views\site\index.php:25
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 F:\wamp\wamp\www\admin\controllers\SiteController.php(57): yii\base\Controller->render()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionIndex()
+#5 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2015-09-08 16:28:11 [127.0.0.1][1][qes76h350lgs4g9cg5r8tat8f0][info][application] $_COOKIE = [
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51825'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/web/'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722491.086
+    'REQUEST_TIME' => 1441722491
+]
+2015-09-08 16:28:15 [127.0.0.1][1][qes76h350lgs4g9cg5r8tat8f0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Url' not found' in F:\wamp\wamp\www\admin\views\site\index.php:25
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 F:\wamp\wamp\www\admin\controllers\SiteController.php(57): yii\base\Controller->render()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionIndex()
+#5 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2015-09-08 16:28:14 [127.0.0.1][1][qes76h350lgs4g9cg5r8tat8f0][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qes76h350lgs4g9cg5r8tat8f0'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=qes76h350lgs4g9cg5r8tat8f0; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/web/'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722494.894
+    'REQUEST_TIME' => 1441722494
+]
+2015-09-08 16:28:50 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: upload/Upload' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('Upload', Array)
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('upload/Upload', Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2015-09-08 16:28:50 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'upload/Upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php98D8.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qes76h350lgs4g9cg5r8tat8f0'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary6uFed81iHJEWX1PB'
+    'HTTP_REFERER' => 'http://localhost/admin/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=qes76h350lgs4g9cg5r8tat8f0; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D; _csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51863'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2FUpload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2FUpload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722530.364
+    'REQUEST_TIME' => 1441722530
+]
+2015-09-08 16:29:37 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: upload/Upload' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('Upload', Array)
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('upload/Upload', Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2015-09-08 16:29:37 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'upload/Upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php4F4C.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qes76h350lgs4g9cg5r8tat8f0'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary6uFed81iHJEWX1PB'
+    'HTTP_REFERER' => 'http://localhost/admin/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=qes76h350lgs4g9cg5r8tat8f0; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D; _csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51865'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2FUpload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2FUpload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722577.084
+    'REQUEST_TIME' => 1441722577
+]
+2015-09-08 16:29:41 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: F:\wamp\wamp\www\admin\views\upload\upload.php' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('F:\\wamp\\wamp\\ww...', Array, Object(app\controllers\UploadController))
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('upload', Array, Object(app\controllers\UploadController))
+#2 F:\wamp\wamp\www\admin\controllers\UploadController.php(28): yii\base\Controller->render('upload', Array)
+#3 [internal function]: app\controllers\UploadController->actionUpload()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('upload', Array)
+#7 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('upload/upload', Array)
+#8 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2015-09-08 16:29:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qes76h350lgs4g9cg5r8tat8f0'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=qes76h350lgs4g9cg5r8tat8f0; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D; _csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722581.597
+    'REQUEST_TIME' => 1441722581
+]
+2015-09-08 16:29:41 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2015-09-08 16:29:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qes76h350lgs4g9cg5r8tat8f0'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=qes76h350lgs4g9cg5r8tat8f0; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D; _csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722581.597
+    'REQUEST_TIME' => 1441722581
+]
+2015-09-08 16:29:57 [127.0.0.1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('upload', Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('upload/upload', Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2015-09-08 16:29:57 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php9EC3.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qes76h350lgs4g9cg5r8tat8f0'
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryDJt8uOxSgyJvJLGr'
+    'HTTP_REFERER' => 'http://localhost/admin/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=qes76h350lgs4g9cg5r8tat8f0; _csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51878'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722597.424
+    'REQUEST_TIME' => 1441722597
+]
+2015-09-08 16:29:57 [127.0.0.1][1][qes76h350lgs4g9cg5r8tat8f0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2015-09-08 16:29:57 [127.0.0.1][1][qes76h350lgs4g9cg5r8tat8f0][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php9EC3.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qes76h350lgs4g9cg5r8tat8f0'
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryDJt8uOxSgyJvJLGr'
+    'HTTP_REFERER' => 'http://localhost/admin/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=qes76h350lgs4g9cg5r8tat8f0; _csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51878'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722597.424
+    'REQUEST_TIME' => 1441722597
+]
+2015-09-08 16:31:56 [127.0.0.1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('upload', Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('upload/upload', Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2015-09-08 16:31:55 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php6D87.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryVjVLBKJ5nnlB0usy'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51897'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722715.896
+    'REQUEST_TIME' => 1441722715
+]
+2015-09-08 16:31:56 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2015-09-08 16:31:55 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php6D87.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryVjVLBKJ5nnlB0usy'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51897'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722715.896
+    'REQUEST_TIME' => 1441722715
+]
+2015-09-08 16:35:01 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: F:\wamp\wamp\www\admin\views\upload\upload.php' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('F:\\wamp\\wamp\\ww...', Array, Object(app\controllers\UploadController))
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('upload', Array, Object(app\controllers\UploadController))
+#2 F:\wamp\wamp\www\admin\controllers\UploadController.php(28): yii\base\Controller->render('upload', Array)
+#3 [internal function]: app\controllers\UploadController->actionUpload()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('upload', Array)
+#7 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('upload/upload', Array)
+#8 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2015-09-08 16:35:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51985'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=upload/upload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload/upload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722900.924
+    'REQUEST_TIME' => 1441722900
+]
+2015-09-08 16:35:01 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2015-09-08 16:35:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '51985'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=upload/upload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload/upload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441722900.924
+    'REQUEST_TIME' => 1441722900
+]
+2015-09-08 16:36:51 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: F:\wamp\wamp\www\admin\views\upload\index.php' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('F:\\wamp\\wamp\\ww...', Array, Object(app\controllers\UploadController))
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(app\controllers\UploadController))
+#2 F:\wamp\wamp\www\admin\controllers\UploadController.php(28): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\UploadController->actionUpload()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('upload', Array)
+#7 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('upload/upload', Array)
+#8 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2015-09-08 16:36:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52054'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=upload/upload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload/upload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723011.521
+    'REQUEST_TIME' => 1441723011
+]
+2015-09-08 16:36:51 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2015-09-08 16:36:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52054'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=upload/upload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload/upload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723011.521
+    'REQUEST_TIME' => 1441723011
+]
+2015-09-08 16:39:34 [127.0.0.1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('upload', Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('upload/upload', Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2015-09-08 16:39:33 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php6A9C.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNfiviKBcWrKjiSOl'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52083'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723173.898
+    'REQUEST_TIME' => 1441723173
+]
+2015-09-08 16:39:34 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2015-09-08 16:39:33 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php6A9C.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNfiviKBcWrKjiSOl'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52083'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723173.898
+    'REQUEST_TIME' => 1441723173
+]
+2015-09-08 16:40:22 [127.0.0.1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('upload', Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('upload/upload', Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2015-09-08 16:40:22 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php285F.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNfiviKBcWrKjiSOl'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52085'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723222.476
+    'REQUEST_TIME' => 1441723222
+]
+2015-09-08 16:40:22 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2015-09-08 16:40:22 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php285F.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNfiviKBcWrKjiSOl'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52085'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723222.476
+    'REQUEST_TIME' => 1441723222
+]
+2015-09-08 16:41:51 [127.0.0.1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('upload', Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/upload', Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2015-09-08 16:41:51 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'site/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php8474.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNRBZPgWYYob2STLk'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52099'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=site%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723311.59
+    'REQUEST_TIME' => 1441723311
+]
+2015-09-08 16:41:51 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2015-09-08 16:41:51 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][info][application] $_GET = [
+    'r' => 'site/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php8474.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNRBZPgWYYob2STLk'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52099'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=site%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723311.59
+    'REQUEST_TIME' => 1441723311
+]
+2015-09-08 16:42:44 [127.0.0.1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('upload', Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/upload', Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2015-09-08 16:42:44 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'site/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php5193.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNRBZPgWYYob2STLk'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52104'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=site%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723364.102
+    'REQUEST_TIME' => 1441723364
+]
+2015-09-08 16:42:44 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2015-09-08 16:42:44 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][info][application] $_GET = [
+    'r' => 'site/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php5193.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNRBZPgWYYob2STLk'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52104'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=site%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723364.102
+    'REQUEST_TIME' => 1441723364
+]
+2015-09-08 16:43:50 [127.0.0.1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('upload', Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/upload', Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2015-09-08 16:43:49 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'site/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php52BC.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryBFpja4WOH9dV1Po7'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52111'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=site%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723429.934
+    'REQUEST_TIME' => 1441723429
+]
+2015-09-08 16:43:50 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2015-09-08 16:43:49 [127.0.0.1][1][n6sjf6pmhdodfh1ceoii7qd784][info][application] $_GET = [
+    'r' => 'site/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php52BC.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/web/index.php'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryBFpja4WOH9dV1Po7'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52111'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=site%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723429.934
+    'REQUEST_TIME' => 1441723429
+]
+2015-09-08 16:45:14 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in F:\wamp\wamp\www\admin\controllers\UploadController.php:26
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2015-09-08 16:45:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php9D92.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarysNqenf8J8k1xRD09'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52115'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723514.627
+    'REQUEST_TIME' => 1441723514
+]
+2015-09-08 16:47:38 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in F:\wamp\wamp\www\admin\controllers\UploadController.php:26
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2015-09-08 16:47:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\phpCDF6.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryRGg8KL1E19sgXN73'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52351'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723658.081
+    'REQUEST_TIME' => 1441723658
+]
+2015-09-08 16:49:08 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in F:\wamp\wamp\www\admin\controllers\UploadController.php:26
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2015-09-08 16:49:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php2D84.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryHhRPDffdAdB8BAML'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52380'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723748.078
+    'REQUEST_TIME' => 1441723748
+]
+2015-09-08 16:49:40 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in F:\wamp\wamp\www\admin\controllers\UploadController.php:26
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2015-09-08 16:49:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\phpAD1F.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryt54kU6j0EZc2jzHG'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52385'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441723780.741
+    'REQUEST_TIME' => 1441723780
+]
+2015-09-08 16:53:25 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in F:\wamp\wamp\www\admin\controllers\UploadController.php:26
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2015-09-08 16:53:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php1989.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryt54kU6j0EZc2jzHG'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52499'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441724005.103
+    'REQUEST_TIME' => 1441724005
+]
+2015-09-08 16:54:07 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in F:\wamp\wamp\www\admin\controllers\UploadController.php:26
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2015-09-08 16:54:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\phpBEBE.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryt54kU6j0EZc2jzHG'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52500'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441724047.393
+    'REQUEST_TIME' => 1441724047
+]
+2015-09-08 17:14:20 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in F:\wamp\wamp\www\admin\controllers\UploadController.php:26
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2015-09-08 17:14:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php42AE.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryt54kU6j0EZc2jzHG'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52602'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441725260.818
+    'REQUEST_TIME' => 1441725260
+]
+2015-09-08 17:19:51 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in F:\wamp\wamp\www\admin\controllers\UploadController.php:26
+Stack trace:
+#0 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\wamp\wamp\www\admin\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\wamp\wamp\www\admin\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2015-09-08 17:19:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'upload/upload'
+]
+
+$_FILES = [
+    'pic' => [
+        'name' => '2006420114643989.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\wamp\\wamp\\tmp\\php4D1A.tmp'
+        'error' => 0
+        'size' => 3210
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf\";}'
+    'PHPSESSID' => 'n6sjf6pmhdodfh1ceoii7qd784'
+    '_identity' => 'afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[\"1\",\"1234\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '3403'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryt54kU6j0EZc2jzHG'
+    'HTTP_REFERER' => 'http://localhost/admin/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=381939e6d32f50dca1cd2596cb7a75e2d95d61d0f6315bfb80940572654e9193a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D1KnE5A-G3Izt88fbF2UwHJuoiCjujjf%22%3B%7D; PHPSESSID=n6sjf6pmhdodfh1ceoii7qd784; _identity=afb2c98d05532a1a672abb042a6bf9aa9c2761f64c2a80b1377f9ddf2e7b0e65a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B%221%22%2C%221234%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Java\\jdk1.7.0_67\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\jre\\bin;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;F:\\wamp\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;F:\\Git\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\\Doctrine extensions for PHP\\F:\\apache-tomcat-8.0.21\\lib;F:\\apache-tomcat-8.0.21\\bin;C:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/wamp/wamp/www/admin/web/index.php'
+    'REMOTE_PORT' => '52609'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=upload%2Fupload'
+    'REQUEST_URI' => '/admin/web/index.php?r=upload%2Fupload'
+    'SCRIPT_NAME' => '/admin/web/index.php'
+    'PHP_SELF' => '/admin/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1441725591.161
+    'REQUEST_TIME' => 1441725591
+]
