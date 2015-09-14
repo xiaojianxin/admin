@@ -16,7 +16,9 @@ class UploadController extends Controller
 		$pic = new Pictures();
 
         if (Yii::$app->request->isPost) {
-            $model->file = UploadedFile::getInstance($model, 'file');
+            //$model->file = UploadedFile::getInstance($model, 'file');
+
+            echo $_FILES;
 
             if ($model->validate()) {                
                 $model->file->saveAs('../pictures/' . $model->file->baseName . '.' . $model->file->extension);
