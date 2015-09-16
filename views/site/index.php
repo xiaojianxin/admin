@@ -1,5 +1,7 @@
 <?php
 /* @var $this yii\web\View */
+
+use yii\helpers\Url;
 $this->title = 'Ontee admin';
 ?>
 <table class="table">
@@ -22,8 +24,8 @@ $this->title = 'Ontee admin';
                 </h4>
              </div>
              <div class="modal-body">
-                 <form action="" method="post" enctype="multipart/form-data">
-                    <input type="file" class="btn btn-default" name="pic"/>
+                 <form action="<?=Url::to(['upload/upload'])?>" method="post" enctype="multipart/form-data">
+                    <input type="file" class="btn btn-default" name="UploadForm[file]"/>
                     
              </div>
              <div class="modal-footer">

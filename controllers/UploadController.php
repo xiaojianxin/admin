@@ -10,8 +10,12 @@ use app\models\Pictures;
 
 class UploadController extends Controller
 {
+    public function init(){
+        $this->enableCsrfValidation = false;
+    }
+
 	public function actionUpload()
-	{
+	{  
 		$model = new UploadForm();
 		$pic = new Pictures();
 
@@ -26,7 +30,6 @@ class UploadController extends Controller
             	$pic->save();
             }
         }
-
-        return $this->render('upload', ['model' => $model]);
+            echo "1";
 	}
 }
