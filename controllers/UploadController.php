@@ -14,25 +14,25 @@ class UploadController extends Controller
         $this->enableCsrfValidation = false;
     }
 
-	public function actionUpload()
-	{  
-		$model = new UploadForm();
-		$pic = new Pictures();
+	// public function actionUpload()
+	// {  
+	// 	$model = new UploadForm();
+	// 	$pic = new Pictures();
 
-        if (Yii::$app->request->isPost) {
-            //$model->file = UploadedFile::getInstance($model, 'file');
+ //        if (Yii::$app->request->isPost) {
+ //            //$model->file = UploadedFile::getInstance($model, 'file');
 
-            echo $_FILES;
+ //            echo $_FILES;
 
-            if ($model->validate()) {                
-                $model->file->saveAs('./pictures/' . $model->file->baseName . '.' . $model->file->extension);
-            	$pic->url = 'pictures/'.$model->file->baseName.'.'.$model->file->extension;
-                $pic->name = $model->file->baseName;
-            	$pic->save();
-            }
-        }
-            echo "1";
-	}
+ //            if ($model->validate()) {                
+ //                $model->file->saveAs('./pictures/' . $model->file->baseName . '.' . $model->file->extension);
+ //            	$pic->url = 'pictures/'.$model->file->baseName.'.'.$model->file->extension;
+ //                $pic->name = $model->file->baseName;
+ //            	$pic->save();
+ //            }
+ //        }
+ //            echo "1";
+	// }
 
     public function actionShow()
     {
@@ -45,12 +45,12 @@ class UploadController extends Controller
 
     public function actionDelete()
     {
-        $request = YII::$app->request;
-        $name = $request->get('name');
+        $request = YII::$app->request->post();
+        $name = $request['name'];
         $sql = 'select * from pictures where name=:name';
         $pic = Pictures::findBySql($sql, array(':name'=>$name))->asArray()->one();
         //删除pictures目录下的图片
-        $path = $pic['url'];
+        $path = 'http://www.ontee.cn/'.$pic['url'];
         if(is_readable($path))
             unlink($path);
 
@@ -60,8 +60,11 @@ class UploadController extends Controller
         $model->bindParam(':name', $name);
         if($pic)
             $model->execute();
+            
         else
             echo "Not Exists";
-        echo 'hehe';
+
+        echo "0";
+        
     }
 }

@@ -8,15 +8,23 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\UploadForm;
+use yii\web\UploadedFile;
+use app\models\Pictures;
+
 
 class SiteController extends Controller
 {
+
+    public function init(){
+        $this->enableCsrfValidation = false;
+    }
     public function behaviors()
     {
         return [
            'access' => [
                 'class' => AccessControl::className(),
-                'except' =>['login','signup'],
+                'except' =>['login','signup',],
                 'rules' => [
                     [
                         'actions' => ['login'],
@@ -24,8 +32,8 @@ class SiteController extends Controller
                         'roles' => ['?'],
                     ],
                     [
-                        'allow' => true,
                         'actions' => [ 'index','logout','upload'],
+                        'allow' => true,
                         'roles' => ['@'],
                     ],
                 ],
@@ -34,6 +42,7 @@ class SiteController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
+                    'upload' => ['post'],
                 ],
             ],
         ];
@@ -54,7 +63,11 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $pictures = Pictures::find()->all();
+
+        return $this->render('index',[
+            'pictures' => $pictures,
+            ]);
     }
 
     public function actionLogin()
@@ -105,21 +118,24 @@ class SiteController extends Controller
         $model = new UploadForm();
         $pic = new Pictures();
 
+
         if (Yii::$app->request->isPost) {
             $model->file = UploadedFile::getInstance($model, 'file');
             $name = time();
 
-            $url = Yii::$app->basePath."/web".'/';
+            //$url = Yii::$app->basePath."/web".'/';
 
             if ($model->validate()) {                
-                $model->file->saveAs($url.'pictures/' . $name. '.' . $model->file->extension);
+                $model->file->saveAs('../../Ontee/web/pictures/' . $name. '.' . $model->file->extension);
                 $pic->url = 'pictures/'.$name.'.'.$model->file->extension;
-                $pic->save();
-
-                return $this->render('index');
+                $pic->name = $model->file->baseName;
+                if($pic->save()){
+                    return $this->runAction('index');
+                }
 
             }
         }
        
     }
+
 }

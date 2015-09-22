@@ -35,7 +35,31 @@ $this->title = 'Ontee admin';
                 <input type="submit" class="btn btn-success" value="提交"/>
             </form>
              </div>
-          </div><!-- /.modal-content -->
+          </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+
+
+        <!-- 模态框（Modal） -->
+    <div class="modal fade" id="check" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal" aria-hidden="true">
+                      &times;
+                </button>
+             </div>
+             <div class="modal-body">
+                <img id="showpic" style="width:100%;" src="" >
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-default" 
+                   data-dismiss="modal">关闭
+                </button>
+             </div>
+          </div>
+        </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 
 
@@ -48,18 +72,52 @@ $this->title = 'Ontee admin';
       </tr>
    </thead>
    <tbody>
+
+    <?php foreach ($pictures as $key => $picture) {?>
       <tr>
-         <td>Tanmay</td>
+         <td><?php echo $picture['name']?></td>
          <td> 
-            <a class="btn btn-primary">查看</a>
-            <a class="btn btn-danger">删除</a></td>
+            <a class="btn btn-primary check" id="<?=$picture['url']?>" data-toggle="modal" data-target="#check">查看</a>
+            <a class="btn btn-danger delete" id="<?=$picture['name']?>">删除</a></td>
       </tr>
-      <tr>
-         <td>
- 
-         </td>
-         <td>Mumbai</td>
-      </tr>
+    <?php } ?>
+    
    </tbody>
 </table>
 
+
+<?php $this->beginBlock("showpic")?>
+
+$('.check').click(function(){
+    var value = $(this).attr('id');
+
+    var url = 'http://www.ontee.cn/'+value;
+
+    $('#showpic').attr('src',url);
+
+
+})
+$('.delete').click(function(){
+    var value = $(this).attr('id');
+
+    $.ajax({
+        type:"POST",
+        url:"index.php?r=upload/delete",
+        dataType:"Json",
+        data:{name:value},
+        success:function(data){
+            if(data == "0"){
+             alert('删除成功');
+              window.location.href = window.location.href;
+            }else{
+            alert('删除失败');
+          }
+            
+        },
+        error:function(){
+
+        }
+    })
+})
+<?php $this->endBlock()?>
+<?php $this->registerJs($this->blocks['showpic'],\yii\web\View::POS_END)?>
