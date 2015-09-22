@@ -24,7 +24,7 @@ $this->title = 'Ontee admin';
                 </h4>
              </div>
              <div class="modal-body">
-                 <form action="<?=Url::to(['upload/upload'])?>" method="post" enctype="multipart/form-data">
+                 <form action="<?=Url::to(['site/upload'])?>" method="post" enctype="multipart/form-data">
                     <input type="file" class="btn btn-default" name="UploadForm[file]"/>
                     
              </div>

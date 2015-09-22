@@ -102,19 +102,23 @@ class SiteController extends Controller
 
     public function actionUpload()
     {  
-        echo "1";
         $model = new UploadForm();
         $pic = new Pictures();
 
         if (Yii::$app->request->isPost) {
             $model->file = UploadedFile::getInstance($model, 'file');
+            $name = time();
+
+            $url = Yii::$app->basePath."/web".'/';
 
             if ($model->validate()) {                
-                $model->file->saveAs('../pictures/' . $model->file->baseName . '.' . $model->file->extension);
-                $pic->url = 'pictures/'.$model->file->baseName.'.'.$model->file->extension;
+                $model->file->saveAs($url.'pictures/' . $name. '.' . $model->file->extension);
+                $pic->url = 'pictures/'.$name.'.'.$model->file->extension;
                 $pic->save();
+
+                return $this->render('index');
             }
         }
-            echo "1";
+       
     }
 }
