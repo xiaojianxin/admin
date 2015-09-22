@@ -117,6 +117,7 @@ class SiteController extends Controller
                 $pic->save();
 
                 return $this->render('index');
+
             }
         }
        
