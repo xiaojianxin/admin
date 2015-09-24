@@ -63,8 +63,7 @@ $this->title = 'Ontee admin';
     </div><!-- /.modal -->
 
 
-  
-   <div class="holder"></div>
+
    <thead>
       <tr>
          <th>名称</th>
@@ -83,49 +82,70 @@ $this->title = 'Ontee admin';
     <?php } ?>
     
    </tbody>
+
+
 </table>
+
+    <div class="holder" style="margin-left: 100px;">
+        <a class="jp-previous jp-disabled">← previous</a>
+        <a class="jp-current">1</a>
+        <span class="jp-hidden">...</span>
+        <a>2</a>
+        <a>3</a>
+        <a>4</a>
+        <a>5</a>
+        <a class="jp-hidden">6</a>
+        <a class="jp-hidden">7</a>
+        <a class="jp-hidden">8</a>
+        <a class="jp-hidden">9</a>
+        <span>...</span>
+        <a>10</a>
+        <a class="jp-next">next →</a>
+    </div>
 
 
 <?php $this->beginBlock("showpic")?>
 
-$('.check').click(function(){
-    var value = $(this).attr('id');
+$(function(){ 
 
-    var url = 'http://www.ontee.cn/'+value;
+  $('.check').click(function(){
+      var value = $(this).attr('id');
 
-    $('#showpic').attr('src',url);
+      var url = 'http://www.ontee.cn/'+value;
+
+      $('#showpic').attr('src',url);
 
 
-})
-$('.delete').click(function(){
-    var value = $(this).attr('id');
+  })
+  $('.delete').click(function(){
+      var value = $(this).attr('id');
 
-    $.ajax({
-        type:"POST",
-        url:"index.php?r=upload/delete",
-        dataType:"Json",
-        data:{name:value},
-        success:function(data){
-            if(data == "0"){
-             alert('删除成功');
-              window.location.href = window.location.href;
-            }else{
-            alert('删除失败');
+      $.ajax({
+          type:"POST",
+          url:"index.php?r=upload/delete",
+          dataType:"Json",
+          data:{name:value},
+          success:function(data){
+              if(data == "0"){
+               alert('删除成功');
+                window.location.href = window.location.href;
+              }else{
+              alert('删除失败');
+            }
+              
+          },
+          error:function(){
+
           }
-            
-        },
-        error:function(){
-
-        }
-    })
-})
+      })
+  })
  
-$("div.holder").jPages({  
-      containerID : "",  
-      previous : "←",  
-      next : "→",  
-      perPage : 10,  
-      delay : 100  
+  $("div .holder").jPages({  
+        containerID : "itemContainer",  
+        previous : "←",  
+        next : "→",  
+        perPage : 10,   
+  }); 
 });  
 
 <?php $this->endBlock()?>
