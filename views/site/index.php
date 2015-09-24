@@ -64,14 +64,14 @@ $this->title = 'Ontee admin';
 
 
   
-   
+   <div class="holder"></div>
    <thead>
       <tr>
          <th>名称</th>
          <th>操作</th>
       </tr>
    </thead>
-   <tbody>
+   <tbody id="itemContainer">
 
     <?php foreach ($pictures as $key => $picture) {?>
       <tr>
@@ -119,5 +119,14 @@ $('.delete').click(function(){
         }
     })
 })
+ 
+$("div.holder").jPages({  
+      containerID : "",  
+      previous : "←",  
+      next : "→",  
+      perPage : 10,  
+      delay : 100  
+});  
+
 <?php $this->endBlock()?>
 <?php $this->registerJs($this->blocks['showpic'],\yii\web\View::POS_END)?>
