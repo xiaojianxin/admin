@@ -8,15 +8,23 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\UploadForm;
+use yii\web\UploadedFile;
+use app\models\Pictures;
+
 
 class SiteController extends Controller
 {
+
+    public function init(){
+        $this->enableCsrfValidation = false;
+    }
     public function behaviors()
     {
         return [
            'access' => [
                 'class' => AccessControl::className(),
-                'except' =>['login','signup'],
+                'except' =>['login','signup',],
                 'rules' => [
                     [
                         'actions' => ['login'],
@@ -24,8 +32,9 @@ class SiteController extends Controller
                         'roles' => ['?'],
                     ],
                     [
+
+                        'actions' => [ 'index','logout','upload'],
                         'allow' => true,
-                        'actions' => [ 'index','logout'],
                         'roles' => ['@'],
                     ],
                 ],
@@ -34,6 +43,7 @@ class SiteController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
+                    'upload' => ['post'],
                 ],
             ],
         ];
@@ -54,7 +64,11 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $pictures = Pictures::find()->all();
+
+        return $this->render('index',[
+            'pictures' => $pictures,
+            ]);
     }
 
     public function actionLogin()
@@ -67,7 +81,7 @@ class SiteController extends Controller
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
              $this->layout = "main.php";
-             return $this->render('index');
+             return $this->runAction('index');
         } else {
             return $this->render('login', [
                 'model' => $model,
@@ -100,5 +114,29 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    
+    public function actionUpload()
+    {  
+        $model = new UploadForm();
+        $pic = new Pictures();
+
+
+        // if (Yii::$app->request->isPost) {
+        //     $model->file = UploadedFile::getInstance($model, 'file');
+        //     $name = time();
+
+        //     //$url = Yii::$app->basePath."/web".'/';
+
+        //     if ($model->validate()) {                
+        //         $model->file->saveAs('../../Ontee/web/pictures/' . $name. '.' . $model->file->extension);
+        //         $pic->url = 'pictures/'.$name.'.'.$model->file->extension;
+        //         $pic->name = $model->file->baseName;
+        //         $pic->insert();   
+
+        //     }
+        // }
+
+         
+        return $this->runAction('index');
+
+    }
 }

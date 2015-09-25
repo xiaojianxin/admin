@@ -24,7 +24,7 @@ $this->title = 'Ontee admin';
                 </h4>
              </div>
              <div class="modal-body">
-                 <form action="<?=Url::to(['upload/upload'])?>" method="post" enctype="multipart/form-data">
+                 <form action="<?=Url::to(['site/upload'])?>" method="post" enctype="multipart/form-data">
                     <input type="file" class="btn btn-default" name="UploadForm[file]"/>
                     
              </div>
@@ -35,31 +35,118 @@ $this->title = 'Ontee admin';
                 <input type="submit" class="btn btn-success" value="提交"/>
             </form>
              </div>
-          </div><!-- /.modal-content -->
+          </div>
+        </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 
 
-  
-   
+        <!-- 模态框（Modal） -->
+    <div class="modal fade" id="check" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal" aria-hidden="true">
+                      &times;
+                </button>
+             </div>
+             <div class="modal-body">
+                <img id="showpic" style="width:100%;" src="" >
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-default" 
+                   data-dismiss="modal">关闭
+                </button>
+             </div>
+          </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+
+
+
    <thead>
       <tr>
          <th>名称</th>
          <th>操作</th>
       </tr>
    </thead>
-   <tbody>
+   <tbody id="itemContainer">
+
+    <?php foreach ($pictures as $key => $picture) {?>
       <tr>
-         <td>Tanmay</td>
+         <td><?php echo $picture['name']?></td>
          <td> 
-            <a class="btn btn-primary">查看</a>
-            <a class="btn btn-danger">删除</a></td>
+            <a class="btn btn-primary check" id="<?=$picture['url']?>" data-toggle="modal" data-target="#check">查看</a>
+            <a class="btn btn-danger delete" id="<?=$picture['name']?>">删除</a></td>
       </tr>
-      <tr>
-         <td>
- 
-         </td>
-         <td>Mumbai</td>
-      </tr>
+    <?php } ?>
+    
    </tbody>
+
+
 </table>
 
+    <div class="holder" style="margin-left: 100px;">
+        <a class="jp-previous jp-disabled">← previous</a>
+        <a class="jp-current">1</a>
+        <span class="jp-hidden">...</span>
+        <a>2</a>
+        <a>3</a>
+        <a>4</a>
+        <a>5</a>
+        <a class="jp-hidden">6</a>
+        <a class="jp-hidden">7</a>
+        <a class="jp-hidden">8</a>
+        <a class="jp-hidden">9</a>
+        <span>...</span>
+        <a>10</a>
+        <a class="jp-next">next →</a>
+    </div>
+
+
+<?php $this->beginBlock("showpic")?>
+
+$(function(){ 
+
+  $('.check').click(function(){
+      var value = $(this).attr('id');
+
+      var url = 'http://www.ontee.cn/'+value;
+
+      $('#showpic').attr('src',url);
+
+
+  })
+  $('.delete').click(function(){
+      var value = $(this).attr('id');
+
+      $.ajax({
+          type:"POST",
+          url:"index.php?r=upload/delete",
+          dataType:"Json",
+          data:{name:value},
+          success:function(data){
+              if(data == "0"){
+               alert('删除成功');
+                window.location.href = window.location.href;
+              }else{
+              alert('删除失败');
+            }
+              
+          },
+          error:function(){
+
+          }
+      })
+  })
+ 
+  $("div .holder").jPages({  
+        containerID : "itemContainer",  
+        previous : "←",  
+        next : "→",  
+        perPage : 10,   
+  }); 
+});  
+
+<?php $this->endBlock()?>
+<?php $this->registerJs($this->blocks['showpic'],\yii\web\View::POS_END)?>
