@@ -25,7 +25,7 @@ class SiteController extends Controller
                     ],
                     [
                         'allow' => true,
-                        'actions' => [ 'index','logout','upload'],
+                        'actions' => [ 'index','logout'],
                         'roles' => ['@'],
                     ],
                 ],
@@ -100,21 +100,5 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    public function actionUpload()
-    {  
-        echo "1";
-        $model = new UploadForm();
-        $pic = new Pictures();
-
-        if (Yii::$app->request->isPost) {
-            $model->file = UploadedFile::getInstance($model, 'file');
-
-            if ($model->validate()) {                
-                $model->file->saveAs('../pictures/' . $model->file->baseName . '.' . $model->file->extension);
-                $pic->url = 'pictures/'.$model->file->baseName.'.'.$model->file->extension;
-                $pic->save();
-            }
-        }
-            echo "1";
-    }
+    
 }
