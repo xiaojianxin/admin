@@ -34,13 +34,25 @@ class UploadController extends Controller
  //            echo "1";
 	// }
 
+    // public function actionShow()
+    // {
+    //     $request = YII::$app->request;
+    //     $name = $request->get('name');
+    //     $sql = 'select * from pictures where name=:name';
+    //     $results = Pictures::findBySql($sql, array(':name'=>$name))->asArray()->one();
+    //     return $results['url'];
+    // }
+
     public function actionShow()
     {
         $request = YII::$app->request;
-        $name = $request->get('name');
-        $sql = 'select * from pictures where name=:name';
-        $results = Pictures::findBySql($sql, array(':name'=>$name))->asArray()->one();
-        return $results['url'];
+        $type = $request->get('type');
+        $sql = 'select * from pictures where type=:type';
+        $results = Pictures::findBySql($sql, array(':type'=>$type))->all();
+        // $sql = 'select * from pictures where type=0';
+        // $results = Pictures::findBySql($sql)->all();
+        return $results[0]['url'];
+        // print_R($results);
     }
 
     public function actionDelete()
