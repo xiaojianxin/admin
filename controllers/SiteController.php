@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\UploadForm;
+use app\models\Order;
 use yii\web\UploadedFile;
 use app\models\Pictures;
 use yii\helpers\Url;
@@ -34,7 +35,7 @@ class SiteController extends Controller
                     ],
                     [
 
-                        'actions' => [ 'index','logout','upload'],
+                        'actions' => [ 'index','logout','upload','order'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -143,5 +144,12 @@ class SiteController extends Controller
                 $pic->save()
                 return $this->redirect(Url::to(['site/index','type'=>$pic->type]));
 
+    }
+    public function actionOrder() {
+        $request = Yii::$app->request;
+        $id = $request->get('id');
+        $sql = 'select * from `order` where id=:id';
+        $order = Order::findBySql($sql, array(':id'=>$id))->asArray()->one();
+        return $order['frontpic'];
     }
 }
