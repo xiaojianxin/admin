@@ -65,12 +65,18 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $pictures = Pictures::find()->all();
+        // $pictures = Pictures::find()->all();
+
+        $request = YII::$app->request;
+        $type = $request->get('type');
+        $sql = 'select * from pictures where type=:type';
+        $pictures = Pictures::findBySql($sql, array(':type'=>$type))->all();
 
         return $this->render('index',[
             'pictures' => $pictures,
             ]);
     }
+
 
     public function actionLogin()
     {
@@ -119,6 +125,7 @@ class SiteController extends Controller
     {  
         $model = new UploadForm();
         $pic = new Pictures();
+        $request = YII::$app->request;
 
 
         // if (Yii::$app->request->isPost) {
@@ -127,17 +134,14 @@ class SiteController extends Controller
 
         //     //$url = Yii::$app->basePath."/web".'/';
 
-        //     if ($model->validate()) {                
-        //         $model->file->saveAs('../../Ontee/web/pictures/' . $name. '.' . $model->file->extension);
-        //         $pic->url = 'pictures/'.$name.'.'.$model->file->extension;
-        //         $pic->name = $model->file->baseName;
-        //         $pic->insert();   
 
-        //     }
-        // }
-
-
-        return $this->redirect(Url::to(['site/index']));
+            if ($model->validate()) {                
+                $model->file->saveAs('../../Ontee/web/pictures/' . $name. '.' . $model->file->extension);
+                $pic->url = 'pictures/'.$name.'.'.$model->file->extension;
+                $pic->name = $model->file->baseName;
+                $pic->type = $request->get('type');
+                $pic->save()
+                return $this->redirect(Url::to(['site/index','type'=>$pic->type]));
 
     }
 }
