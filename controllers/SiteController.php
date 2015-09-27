@@ -11,6 +11,7 @@ use app\models\ContactForm;
 use app\models\UploadForm;
 use yii\web\UploadedFile;
 use app\models\Pictures;
+use yii\helpers\Url;
 
 
 class SiteController extends Controller
@@ -135,8 +136,8 @@ class SiteController extends Controller
         //     }
         // }
 
-         
-        return $this->runAction('index');
+
+        return $this->redirect(Url::to(['site/index']));
 
     }
 }
