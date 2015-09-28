@@ -9,8 +9,10 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\UploadForm;
+use app\models\Order;
 use yii\web\UploadedFile;
 use app\models\Pictures;
+use yii\helpers\Url;
 
 
 class SiteController extends Controller
@@ -32,7 +34,8 @@ class SiteController extends Controller
                         'roles' => ['?'],
                     ],
                     [
-                        'actions' => [ 'index','logout','upload'],
+
+                        'actions' => [ 'index','logout','upload','order'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -63,12 +66,18 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $pictures = Pictures::find()->all();
+        // $pictures = Pictures::find()->all();
+
+        $request = YII::$app->request;
+        $type = $request->get('type');
+        $sql = 'select * from pictures where type=:type';
+        $pictures = Pictures::findBySql($sql, array(':type'=>$type))->all();
 
         return $this->render('index',[
             'pictures' => $pictures,
             ]);
     }
+
 
     public function actionLogin()
     {
@@ -80,7 +89,7 @@ class SiteController extends Controller
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
              $this->layout = "main.php";
-             return $this->render('index');
+             return $this->runAction('index');
         } else {
             return $this->render('login', [
                 'model' => $model,
@@ -117,24 +126,34 @@ class SiteController extends Controller
     {  
         $model = new UploadForm();
         $pic = new Pictures();
+        $request = YII::$app->request;
 
 
-        if (Yii::$app->request->isPost) {
-            $model->file = UploadedFile::getInstance($model, 'file');
-            $name = time();
+        // if (Yii::$app->request->isPost) {
+        //     $model->file = UploadedFile::getInstance($model, 'file');
+        //     $name = time();
 
-            //$url = Yii::$app->basePath."/web".'/';
+        //     //$url = Yii::$app->basePath."/web".'/';
+
 
             if ($model->validate()) {                
                 $model->file->saveAs('../../Ontee/web/pictures/' . $name. '.' . $model->file->extension);
                 $pic->url = 'pictures/'.$name.'.'.$model->file->extension;
                 $pic->name = $model->file->baseName;
-                $pic->save();
-                return Yii::$app->runController('site/index');
 
+                $pic->type = $request->get('type');
+                $pic->save()
+                return $this->redirect(Url::to(['site/index','type'=>$pic->type]));
             }
-        }
-       
+
     }
 
+
+    public function actionOrder() {
+        $request = Yii::$app->request;
+        $id = $request->get('id');
+        $sql = 'select * from `order` where id=:id';
+        $order = Order::findBySql($sql, array(':id'=>$id))->asArray()->one();
+        return $order['frontpic'];
+    }
 }
