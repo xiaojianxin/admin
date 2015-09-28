@@ -129,9 +129,8 @@ class SiteController extends Controller
                 $model->file->saveAs('../../Ontee/web/pictures/' . $name. '.' . $model->file->extension);
                 $pic->url = 'pictures/'.$name.'.'.$model->file->extension;
                 $pic->name = $model->file->baseName;
-                if($pic->save()){
-                    return $this->runAction('index');
-                }
+                $pic->save();
+                return Yii::$app->runController('site/index');
 
             }
         }

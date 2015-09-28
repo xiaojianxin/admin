@@ -4,6 +4,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use yii\helpers\Url;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -50,11 +51,11 @@ AppAsset::register($this);
 
         <div class="container">
             <div class="row">
-                <div class="col-xs-3">
+                <div class="col-xs-3" id="myScrollspy">
                     <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
-                        <li class="active"><a href="#section-1">素材管理</a></li>
-                        <li><a href="#section-2">第二部分</a></li>
-                        <li><a href="#section-3">第三部分</a></li>
+                        <li id="0" ><a href="<?=Url::to(['site/index','type' => '0'])?>">不可变色素材管理</a></li>
+                        <li id="1" ><a href="<?=Url::to(['site/index','type' => '1'])?>">可变色素材管理</a></li>
+                        <li id="2" ><a href="<?=Url::to(['site/index','type' => '2'])?>">版型管理</a></li>
                         <li><a href="#section-4">第四部分</a></li>
                         <li><a href="#section-5">第五部分</a></li>
                     </ul>
