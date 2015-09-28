@@ -19,7 +19,7 @@ $this->title = 'Ontee admin';
                 </h4>
              </div>
              <div class="modal-body">
-                 <form action="<?=Url::to(['site/upload'])?>" method="post" enctype="multipart/form-data">
+                 <form action="<?=Url::to(['site/upload','type'=>$pictures['0']['type']]);?>" method="post" enctype="multipart/form-data">
                     <input type="file" class="btn btn-default" name="UploadForm[file]"/>
                     
              </div>
@@ -189,12 +189,12 @@ $(function(){
       })
   });
  
-  $("div .holder").jPages({  
-        containerID : "itemContainer",  
-        previous : "←",  
-        next : "→",  
-        perPage : 10,   
-  }); 
+    $("div .holder").jPages({
+        containerID : "itemContainer",
+        previous : "←",
+        next : "→",
+        perPage : 10,
+    });
 });  
 
 <?php $this->endBlock()?>

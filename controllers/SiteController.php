@@ -10,6 +10,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\UploadForm;
 use app\models\Order;
+use app\models\Operator;
 use yii\web\UploadedFile;
 use app\models\Pictures;
 use yii\helpers\Url;
@@ -35,7 +36,7 @@ class SiteController extends Controller
                     ],
                     [
 
-                        'actions' => [ 'index','logout','upload','order'],
+                        'actions' => [ 'index','logout','upload','order','user','gii'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -69,12 +70,21 @@ class SiteController extends Controller
         // $pictures = Pictures::find()->all();
 
         $request = YII::$app->request;
-        $type = $request->get('type');
+        $type = $request->get('type',0);
         $sql = 'select * from pictures where type=:type';
         $pictures = Pictures::findBySql($sql, array(':type'=>$type))->all();
 
         return $this->render('index',[
             'pictures' => $pictures,
+            ]);
+    }
+
+    public function actionUser(){
+
+        $user = Operator::find()->all();
+
+        return $this->render('user',[
+            'users' => $user,
             ]);
     }
 
@@ -129,9 +139,9 @@ class SiteController extends Controller
         $request = YII::$app->request;
 
 
-        // if (Yii::$app->request->isPost) {
-        //     $model->file = UploadedFile::getInstance($model, 'file');
-        //     $name = time();
+         if (Yii::$app->request->isPost) {
+             $model->file = UploadedFile::getInstance($model, 'file');
+             $name = time();
 
         //     //$url = Yii::$app->basePath."/web".'/';
 
@@ -142,9 +152,10 @@ class SiteController extends Controller
                 $pic->name = $model->file->baseName;
 
                 $pic->type = $request->get('type');
-                $pic->save()
+                $pic->save();
                 return $this->redirect(Url::to(['site/index','type'=>$pic->type]));
             }
+         }
 
     }
 
@@ -152,8 +163,10 @@ class SiteController extends Controller
     public function actionOrder() {
         $request = Yii::$app->request;
         $id = $request->get('id');
-        $sql = 'select * from `order` where id=:id';
-        $order = Order::findBySql($sql, array(':id'=>$id))->asArray()->one();
-        return $order['frontpic'];
+        $sql = 'select * from `order` where userid=:id';
+        $order = Order::findBySql($sql, array(':id'=>$id))->asArray()->all();
+        return $this->render('order',[
+            'orders' => $order,
+        ]);
     }
 }

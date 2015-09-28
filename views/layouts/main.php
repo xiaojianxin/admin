@@ -55,8 +55,8 @@ AppAsset::register($this);
                     <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
                         <li id="0" ><a href="<?=Url::to(['site/index','type' => '0'])?>">不可变色素材管理</a></li>
                         <li id="1" ><a href="<?=Url::to(['site/index','type' => '1'])?>">可变色素材管理</a></li>
-                        <li id="2" ><a href="<?=Url::to(['site/index','type' => '2'])?>">版型管理</a></li>
-                        <li><a href="#section-4">第四部分</a></li>
+                        <!-- li id="2" ><a href="<?=Url::to(['site/index','type' => '2'])?>">版型管理</a></li> -->
+                        <li><a href="<?=Url::to(['site/user'])?>">账户管理</a></li>
                         <li><a href="#section-5">第五部分</a></li>
                     </ul>
                 </div>
