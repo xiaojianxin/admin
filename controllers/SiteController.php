@@ -81,11 +81,13 @@ class SiteController extends Controller
 
     public function actionUser(){
 
+//        $sql = "SELECT * FROM `order`  inner join user on order.userid=user.userid";
+
         $user = Operator::find()->all();
 
-        return $this->render('user',[
-            'users' => $user,
-            ]);
+         return $this->render('user',[
+             'users'=> $user,
+             ]);
     }
 
 
@@ -161,12 +163,13 @@ class SiteController extends Controller
 
 
     public function actionOrder() {
+        
+
         $request = Yii::$app->request;
-        $id = $request->get('id');
-        $sql = 'select * from `order` where userid=:id';
-        $order = Order::findBySql($sql, array(':id'=>$id))->asArray()->all();
+        $id = $request->get('id',73);
+        $orders = Order::find()->Where(['userid' => $id])->with('address')->all();
         return $this->render('order',[
-            'orders' => $order,
+            'orders' => $orders,
         ]);
     }
 }

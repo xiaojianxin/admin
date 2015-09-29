@@ -5,6 +5,29 @@
 use yii\helpers\Url;
 $this->title = 'Ontee admin';
 ?>
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="order" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="showpic" style="width:100%;" src="" >
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div><!-- /.modal-content -->
+</div><!-- /.modal -->
 <div id="section-1">
   <table class="table">
      <caption>账户管理</caption>
@@ -22,9 +45,9 @@ $this->title = 'Ontee admin';
         <tr>
            <td><?php echo $user['username']?></td>
            <td><?php echo $user['telephone']?></td>
-           <td><?php echo $user['email']?></td>
+           <td><?php echo $user['email'];?></td>
            <td> 
-              <a class="btn btn-primary check" href="<?=Url::to(['site/order','type'=>$user['userid']])?>">查看订单</a>
+              <a class="btn btn-primary check" href="<?=Url::to(['site/order','id'=>$user['userid']])?>">查看订单</a>
         </tr>
       <?php } ?>
       
