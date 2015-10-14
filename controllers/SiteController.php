@@ -11,6 +11,7 @@ use app\models\ContactForm;
 use app\models\UploadForm;
 use app\models\Order;
 use app\models\Operator;
+use app\models\Fonts;
 use yii\web\UploadedFile;
 use app\models\Pictures;
 use yii\helpers\Url;
@@ -36,7 +37,7 @@ class SiteController extends Controller
                     ],
                     [
 
-                        'actions' => [ 'index','logout','upload','order','user','gii'],
+                        'actions' => [ 'index','logout','upload','order','user','gii','fonts'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -166,10 +167,26 @@ class SiteController extends Controller
         
 
         $request = Yii::$app->request;
-        $id = $request->get('id',73);
-        $orders = Order::find()->Where(['userid' => $id])->with('address')->all();
-        return $this->render('order',[
-            'orders' => $orders,
-        ]);
+        $id = $request->get('id');
+        if(empty($id)){
+            $orders = Order::find()->with('address')->all();
+            return $this->render('order',[
+                'orders' => $orders,
+            ]);
+        }else{
+            $orders = Order::find()->Where(['userid' => $id])->with('address')->all();
+            return $this->render('order',[
+                'orders' => $orders,
+            ]);
+        }
+        
+    }
+
+
+    public function actionFonts(){
+
+        $fonts = Fonts::find()->all();
+        return $this->render('font',[
+            'fonts' => $fonts]);
     }
 }

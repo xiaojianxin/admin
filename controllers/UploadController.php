@@ -7,6 +7,8 @@ use yii\web\Controller;
 use app\models\UploadForm;
 use yii\web\UploadedFile;
 use app\models\Pictures;
+use app\models\Fonts;
+use yii\helpers\Url;
 
 class UploadController extends Controller
 {
@@ -78,5 +80,23 @@ class UploadController extends Controller
 
         echo "0";
         
+    }
+
+    public function actionUploadfont(){
+        $model =  new UploadForm();
+        $font = new Fonts();
+        if (Yii::$app->request->isPost) {
+            $model->file = UploadedFile::getInstance($model, 'file');
+
+            if ($model->validate()) { 
+               if($model->file->saveAs('../../Ontee/web/css/fonts/' .$model->file->baseName. '.' . $model->file->extension)){
+                
+                    $font->ttfurl = 'css/fonts/'.$model->file->baseName.'.'.$model->file->extension;
+                    $font->name = $model->file->baseName;
+                    $font->save();
+                    return $this->redirect(Url::to(['site/fonts']));
+               }            
+            }
+        }
     }
 }

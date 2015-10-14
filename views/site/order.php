@@ -57,7 +57,7 @@ $this->title = 'Ontee admin';
             name="<?=$order->type?>" data-toggle="modal" data-target="#order">前图</a>
 
            <a class="btn btn-primary check" id="<?=$order->backpic?>"
-            name="<?=$order->type?>" data-toggle="modal" data-target="#order">后图</a></td>
+            name="<?=$order->type+4?>" data-toggle="modal" data-target="#order">后图</a></td>
 
            <td><?php if($order->status == '0'){?>
               <a class="btn btn-danger">未支付</a>
@@ -103,9 +103,17 @@ $(function(){
       var url = 'http://www.ontee.cn/'+value;
 
       $('#showpic').attr('src',url);
-      $('#showtype').attr('src',"http://www.ontee.cn/img/teebf.png ");
-
-
+      if(type < 5){
+        $('#showtype').attr('src',"http://www.ontee.cn/img/teef"+type+".png ");
+      }else if(type == 5){
+       $('#showtype').attr('src',"http://www.ontee.cn/img/teebb.png ");
+      }else if(type == 6){
+       $('#showtype').attr('src',"http://www.ontee.cn/img/teebb.png ");
+      }else if(type == 7){
+       $('#showtype').attr('src',"http://www.ontee.cn/img/teewb.png ");
+      }else if(type == 8){
+       $('#showtype').attr('src',"http://www.ontee.cn/img/teewb.png ");
+      }
   });
 
     $("div .holder").jPages({
