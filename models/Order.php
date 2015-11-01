@@ -38,7 +38,7 @@ class Order extends \yii\db\ActiveRecord
     {
         return [
             [['userid',  'frontpic', 'backpic',], 'required'],
-            [['frontpic', 'backpic'], 'string', 'max' => 32],
+            [['frontpic', 'backpic'], 'string', 'max' => 50],
             [['size'], 'string', 'max' => 32]
         ];
     }

@@ -61,8 +61,12 @@ $this->title = 'Ontee admin';
 
            <td><?php if($order->status == '0'){?>
               <a class="btn btn-danger">未支付</a>
-           <?php }else{?>
+           <?php }elseif($order->status == '1'){?>
               <a class="btn btn-success">已支付</a>
+              <a class="btn btn-danger send" id = "<?=$order->id?>">确认发货</a>  
+         <?php }elseif($order->status == '2'){?>
+           <a class="btn btn-success">已支付</a>
+           <a class="btn btn-success">已发货</a>
          <?php }?></td>
         </tr>
       <?php } ?>
@@ -114,6 +118,38 @@ $(function(){
       }else if(type == 8){
        $('#showtype').attr('src',"http://www.ontee.cn/img/teewb.png ");
       }
+  });
+
+  $('.send').click(function(){
+      var id = $(this).attr('id');
+
+      alertify.confirm("确认发货", function (e) {
+      if (e) {
+          // user clicked "ok"
+
+          $.ajax({
+            type:"POST",
+            url:"index.php?r=order/sendorder",
+            dataType:"Json",
+            data:{id:id},
+            success:function(data){
+                if(data==0){
+                alertify.alert( "更改状态成功", function () { 
+                    window.location.href = window.location.href;
+                });
+                }else{
+                alertify.error("更改状态失败");
+                }
+            }
+          });
+
+        } else {
+          // user clicked "cancel"
+        }
+      });
+      
+      $
+
   });
 
     $("div .holder").jPages({

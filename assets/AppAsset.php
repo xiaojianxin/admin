@@ -22,9 +22,12 @@ class AppAsset extends AssetBundle
         'css/login.css',
         'css/jPages.css',
         'css/animate.css',
+        'css/alertify.core.css',
+        'css/alertify.default.css',
     ];
     public $js = [
         'js/jquery-2.1.1.js',
+        'js/alertify.js',
         'js/jPages.min.js',
     ];
     public $depends = [
